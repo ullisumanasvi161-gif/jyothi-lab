@@ -1,0 +1,48 @@
+# ── Node Modules ────────────────────────────────────────────
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# ── Environment Variables (never commit secrets!) ───────────
+.env
+server/.env
+client/.env
+client/.env.local
+client/.env.production
+
+# ── SQLite Database (local data, not for version control) ───
+server/database.db
+server/*.db
+server/*.sqlite
+
+# ── Build Outputs ────────────────────────────────────────────
+client/dist/
+client/build/
+
+# ── Uploaded Files (patient documents, signatures) ──────────
+server/uploads/
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+server/logs/
+
+# ── OS Files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor Files ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Vite & Build Cache ───────────────────────────────────────
+client/.vite/
+client/.cache/
+
+# ── Scratch & Agent Files ────────────────────────────────────
+scratch/
+*.pdf
+.agents/
